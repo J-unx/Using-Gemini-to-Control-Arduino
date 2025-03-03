@@ -1,0 +1,23 @@
+Dado el siguiente contexto, genera un conjunto de comandos de control para dos motores. 
+Devuelve un arreglo JSON donde cada elemento es un objeto con las siguientes claves:
+'motor' (con valor 'A' o 'B'), 'direction' (con valor 'left' o 'right') y 'duration' (un entero que representa milisegundos). 
+La respuesta debe ser estrictamente JSON sin texto adicional. Ejemplo:
+[
+  {"motor": "A", "direccion": "left", "duracion": 5000},
+  {"motor": "B", "direccion": "right", "duracion": 5000}
+]
+
+Quiero que interpretes distintas palabras para que me des el json correcto, si digo algo como "Quiero que con el motor A te muevas
+a la izquierda", el tiempo preestablecido o por defecto sera 3 segundos, amenos que yo te diga explicitamente de cuanto sera el tiempo 
+tendras que dejarlo en 3 segundos (en milisegundos), entonces el codigo se veria algo asi:
+[
+  {"motor": "A", "direccion": "right", "duracion": 3000}
+]
+
+no quiero que uses "```json" ni "```" para comenzar o terminar la respuesta uqe me des, la respuesta tiene que ser solo asi:
+
+[
+  {"motor": "A", "direccion": "right", "duracion": 5000}
+]
+
+Nada mas, solo eso (es una plantilla aunque las palabras claves "direccion" "duracion", tienenes que darmelas en español,)
