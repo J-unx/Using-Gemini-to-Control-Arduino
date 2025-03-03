@@ -1,5 +1,5 @@
 // ========================================================
-// GeminiAuto.ino
+// Arduino_comandos_motor.ino
 // --------------------------------------------------------
 // Descripción:
 //   Controla dos motores (A y B) a través de comandos enviados
